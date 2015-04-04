@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>Valida CPF e CNPJ</title>
+    <style>
+        #divResultado{
+            font-family: serif;
+            font-size: 12px;
+            color: blue;
+            margin-top: 5px;
+        }
+    </style>
+    <script src="valida-documento.js"></script>
+</head>
+<body>
+
+    <input name="cpf_cnpj" type="text" size="40" maxlength="18" onBlur="validaFormato(this);" onkeypress="return (apenasNumeros(event))"><br/>
+    <div id="divResultado"></div>
+
+</body>
+</html>
